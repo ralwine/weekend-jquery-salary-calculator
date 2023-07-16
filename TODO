@@ -6,6 +6,21 @@ TIME TO GET THE CURSOR MOVING!!!!
                 CSS
                 jQuery
                 javascript files and link/source them in
+... and test that they are interacting!!!
+
+3. Create 'SALARY CALCULATOR' header, 'Add Employee' heading, 'Total Monthly' footer
+
+4. Create input fields (First Name, Last Name, ID, Title, Annual Salary), submit button, and table
+
+5. Get onReady Function working in javascript
+
+6. Get the submit button to send data from the input fields to javascript
+    - put a listener on the submit button
+	- make a function that can store the input data in some variables
+
+
+
+
 
                 
 
