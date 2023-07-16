@@ -1,3 +1,21 @@
-body {
-    background-color: salmon;
+table {
+    width: 100%;
+    text-align: left;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 2.15em;
+}
+
+thead {
+    background: lightgrey;
+    
+  }
+
+footer{
+    text-align: right;
 }
