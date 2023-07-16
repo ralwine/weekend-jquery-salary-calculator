@@ -8,15 +8,27 @@ TIME TO GET THE CURSOR MOVING!!!!
                 javascript files and link/source them in
 ... and test that they are interacting!!!
 
-3. Create 'SALARY CALCULATOR' header, 'Add Employee' heading, 'Total Monthly' footer
+3. Create 'SALARY CALCULATOR' header, 'Add Employee' heading, 'Employees' heading, 'Total Monthly' footer
 
-4. Create input fields (First Name, Last Name, ID, Title, Annual Salary), submit button, and table
+4. Create input fields w/ placeholders(First Name, Last Name, ID, Title, Annual Salary), submit button, and table with 5 columns
 
 5. Get onReady Function working in javascript
 
 6. Get the submit button to send data from the input fields to javascript
     - put a listener on the submit button
-	- make a function that can store the input data in some variables
+	- create a function that can store the input data in some variables
+
+7. Create a delete button inside the fifth column of the table.
+    - put a listener on the delete button
+    - create a function that will delete its row
+
+8. Create a variable to keep adding up the annual salaries when they are collected from the input fields
+
+9. Create a function to divide this variable by 12 (monthly salary).
+
+10. If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost
+    - create a conditional to check if the monthly costs are > 20,000
+    - set up css to target this outcome w/ red bg:color
 
 
 
