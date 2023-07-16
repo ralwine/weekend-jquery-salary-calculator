@@ -3,7 +3,7 @@ $(document).ready(onReady);
 function onReady(){
     console.log('in onReady');
 
-   $('.submit').on('click', addFirstName);
+   $('.submit').on('firstName', addFirstName);
    $('.submit').on('click', addLastName);
    $('.submit').on('click', addID);
    $('.submit').on('click', addTitle);
@@ -11,8 +11,8 @@ function onReady(){
 
 }
 
-function addFirstName() {
-
+function addFirstName(firstName) {
+    console.log('in firstName');
 }
 
 function addLastName() {
