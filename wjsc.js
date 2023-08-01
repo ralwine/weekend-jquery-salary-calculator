@@ -15,12 +15,12 @@ function addEmployee(event) {
     console.log('in addEmployee');
     event.preventDefault();
     // roll it into an object
-    let employee = {
+    const employee = {
         firstName: $('#firstName').val(),
         lastName: $('#lastName').val(),
         idNumber: $('#idNumber').val(),
         title: $('#title').val(),
-        annualSalary: $('#annualSalary').val()// this is a string here
+        annualSalary: Number($('#annualSalary').val())// this was a string here.... don't use commas!
     }
     console.log("Employee is: ", employee)
     render(employee)
@@ -48,6 +48,6 @@ function render(employee) {
                 </button>
         </tr>
     `)
-
+    // employee.annualSalary to monthly -> employee.annualSalary/12
     /// math logic here?
 }
