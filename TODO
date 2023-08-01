@@ -5,19 +5,20 @@ START AGAIN!
 - Rethink sections of HTML... table body can be targeted! Form portion looks okay. {}
 
 - Get rid of all the handle submit type listeners, should only need one if employee is rolled
-    into object. Sumbit function should be object w/ 5 key value pairs. Last value needs to be a number. Event prevent please. {}
+    into object. Sumbit function should be object w/ 5 key value pairs. Last value needs to be a number. Event prevent please. {x}
 
-- CONSOLE LOGS in every function {}
+- CONSOLE LOGS in every function {x}
 
 - Work on render... has to be function render(), just bare minimum to start {x}
     - Get employee info into DOM targeting HTML id in <main>
 
-- There needs to be a delete function, it needs a listener. Will be in the last column of the table being created. {}
+- There needs to be a delete function, it needs a listener. Will be in the last column of the table being created. {x}
 
 - Work on the math logic... needs to calculate total monthly salary for all employees (annualSalary/12). If monthly salary totals > $20,000
     CSS should target total monthly cost {}
+    Conditional for total monthly > 20,000 {}
 
--Update this TODO again most likely {}
+-Update this TODO again most likely {x}
 
 
 

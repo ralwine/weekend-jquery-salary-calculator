@@ -15,7 +15,7 @@ function addEmployee(event) {
     console.log('in addEmployee');
     event.preventDefault();
     // roll it into an object
-    const employee = {
+    let employee = {
         firstName: $('#firstName').val(),
         lastName: $('#lastName').val(),
         idNumber: $('#idNumber').val(),
@@ -50,4 +50,8 @@ function render(employee) {
     `)
     // employee.annualSalary to monthly -> employee.annualSalary/12
     /// math logic here?
+    let employeeMonthlySalary = employee.annualSalary/12;
+    let totalMonthlySalary = totalMonthlySalary + employeeMonthlySalary; // does not like this
+
+    
 }
