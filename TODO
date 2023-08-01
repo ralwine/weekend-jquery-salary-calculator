@@ -3,6 +3,8 @@ START AGAIN!
 - Get rid of presets in wireframe {x}
 
 - Rethink sections of HTML... table body can be targeted! Form portion looks okay. {}
+    - Target footer with total monthly cost {}
+
 
 - Get rid of all the handle submit type listeners, should only need one if employee is rolled
     into object. Sumbit function should be object w/ 5 key value pairs. Last value needs to be a number. Event prevent please. {x}
@@ -10,7 +12,8 @@ START AGAIN!
 - CONSOLE LOGS in every function {x}
 
 - Work on render... has to be function render(), just bare minimum to start {x}
-    - Get employee info into DOM targeting HTML id in <main>
+    - Get employee info into DOM targeting HTML id in <main> {x}
+    - Target footer with total monthly cost {}
 
 - There needs to be a delete function, it needs a listener. Will be in the last column of the table being created. {x}
 

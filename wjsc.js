@@ -1,4 +1,6 @@
 $(document).ready(onReady);
+//Need a global variable! Might be why things aren't working on ln56
+let totalMonthlySalary = 0
 
 function onReady(){
     console.log('in onReady');
@@ -51,7 +53,7 @@ function render(employee) {
     // employee.annualSalary to monthly -> employee.annualSalary/12
     /// math logic here?
     let employeeMonthlySalary = employee.annualSalary/12;
-    let totalMonthlySalary = totalMonthlySalary + employeeMonthlySalary; // does not like this
+    totalMonthlySalary = totalMonthlySalary + employeeMonthlySalary; // does not like this
 
     
 }
