@@ -3,30 +3,24 @@ $(document).ready(onReady);
 function onReady(){
     console.log('in onReady');
 
-   $('.submit').on('firstName', addFirstName);
-   $('.submit').on('click', addLastName);
-   $('.submit').on('click', addID);
-   $('.submit').on('click', addTitle);
-   $('.submit').on('click', addAnnualSalary);
+   
+   
+   $('.submit-button').on('click', addEmployee);
 
 }
 
-function addFirstName(firstName) {
-    console.log('in firstName');
+// Let's roll this into one function
+function addEmployee(event) {
+    console.log('in addEmployee');
+    event.preventDefault();
+    // roll it into an object
+    let employee = {
+        firstName: $('#firstName').val(),
+        lastName: $('#lastName').val(),
+        idNumber: $('#idNumber').val(),
+        title: $('#title').val(),
+        annualSalary: $('#annualSalary').val()// this is a string here
+    }
+    console.log("Employee is: ", employee)
 }
 
-function addLastName() {
-
-}
-
-function addID() {
-
-}
-
-function addTitle() {
-
-}
-
-function addAnnualSalary() {
-
-}
