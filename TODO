@@ -1,6 +1,6 @@
 START AGAIN!
 
-- Get rid of presets in wireframe {}
+- Get rid of presets in wireframe {x}
 
 - Rethink sections of HTML... table body can be targeted! Form portion looks okay. {}
 
@@ -9,7 +9,8 @@ START AGAIN!
 
 - CONSOLE LOGS in every function {}
 
-- Work on render... has to be function render(), just bare minimum to start {}
+- Work on render... has to be function render(), just bare minimum to start {x}
+    - Get employee info into DOM targeting HTML id in <main>
 
 - There needs to be a delete function, it needs a listener. Will be in the last column of the table being created. {}
 
