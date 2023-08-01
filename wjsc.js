@@ -35,6 +35,10 @@ function render(employee) {
             <td>${employee.idNumber}</td>
             <td>${employee.title}</td>
             <td>${employee.annualSalary}</td>
+            <td>
+                <button id="delete-button">
+                    REMOVE ASSOCIATE
+                </button>
         </tr>
 
     `)
