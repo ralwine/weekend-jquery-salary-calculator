@@ -3,7 +3,8 @@ $(document).ready(onReady);
 function onReady(){
     console.log('in onReady');
 
-   
+   //Delete listener
+   $('#salaryTable').on('click', '#delete-button', deleteEmployee);
    
    $('.submit-button').on('click', addEmployee);
 
@@ -25,6 +26,12 @@ function addEmployee(event) {
     render(employee)
 }
 
+function deleteEmployee(){
+    console.log("In deleteEmployee")
+    // add functionality
+    $(this).parent().parent().remove(); // just removing button itself .parent()
+}
+
 function render(employee) {
     console.log("Render responding")
     // Respodning... #salaryTable needs to be targeted to append
@@ -40,6 +47,7 @@ function render(employee) {
                     REMOVE ASSOCIATE
                 </button>
         </tr>
-
     `)
+
+    /// math logic here?
 }
