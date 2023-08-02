@@ -2,7 +2,7 @@ START AGAIN!
 
 - Get rid of presets in wireframe {x}
 
-- Rethink sections of HTML... table body can be targeted! Form portion looks okay. {}
+- Rethink sections of HTML... table body can be targeted! Form portion looks okay. {x}
     - Target footer with total monthly cost {x}
 
 
@@ -19,7 +19,7 @@ START AGAIN!
 
 - Work on the math logic... needs to calculate total monthly salary for all employees (annualSalary/12). If monthly salary totals > $20,000
     CSS should target total monthly cost {}
-    Conditional for total monthly > 20,000 {}
+    Conditional for total monthly > 20,000 {x}
 
 -Update this TODO again most likely {x}
 

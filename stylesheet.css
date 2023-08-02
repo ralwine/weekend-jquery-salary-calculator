@@ -1,4 +1,14 @@
+header{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
 table {
+    background-color: blanchedalmond;
     width: 100%;
     text-align: left;
 }

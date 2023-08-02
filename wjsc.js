@@ -43,7 +43,7 @@ function render(employee) {
             <td>${employee.lastName}</td>
             <td>${employee.idNumber}</td>
             <td>${employee.title}</td>
-            <td>${employee.annualSalary}</td>
+            <td>$${employee.annualSalary}</td>
             <td>
                 <button id="delete-button">
                     REMOVE ASSOCIATE
@@ -56,12 +56,12 @@ function render(employee) {
     totalMonthlySalary = totalMonthlySalary + employeeMonthlySalary; // does not like this with let... fixed with global var!
     // can we get this rendering to DOM? should be triggering conditional!
     $('#total').append(`
-        <span id=monthly>$${totalMonthlySalary}</span>
+        <span id=monthly>${totalMonthlySalary}</span>
     `)
 
     $(`#monthly`).remove()
     //conditional here to target totalMonthlySalary... check your HTML and CSS!
     if (totalMonthlySalary > 20000) {
-        $('#monthly').addClass('.redZone')
+        $('#end').addClass('.redZone');
     }
 }
