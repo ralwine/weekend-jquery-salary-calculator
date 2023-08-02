@@ -3,7 +3,7 @@ START AGAIN!
 - Get rid of presets in wireframe {x}
 
 - Rethink sections of HTML... table body can be targeted! Form portion looks okay. {}
-    - Target footer with total monthly cost {}
+    - Target footer with total monthly cost {x}
 
 
 - Get rid of all the handle submit type listeners, should only need one if employee is rolled
@@ -13,7 +13,7 @@ START AGAIN!
 
 - Work on render... has to be function render(), just bare minimum to start {x}
     - Get employee info into DOM targeting HTML id in <main> {x}
-    - Target footer with total monthly cost {}
+    - Target footer with total monthly cost {x}
 
 - There needs to be a delete function, it needs a listener. Will be in the last column of the table being created. {x}
 

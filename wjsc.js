@@ -53,13 +53,15 @@ function render(employee) {
     // employee.annualSalary to monthly -> employee.annualSalary/12
     /// math logic here?
     let employeeMonthlySalary = employee.annualSalary / 12;
-    totalMonthlySalary = totalMonthlySalary + employeeMonthlySalary; // does not like this... fixed with global var!
+    totalMonthlySalary = totalMonthlySalary + employeeMonthlySalary; // does not like this with let... fixed with global var!
     // can we get this rendering to DOM? should be triggering conditional!
     $('#total').append(`
-        <p>${totalMonthlySalary}</p>
-    `)  
+        <span id=monthly>$${totalMonthlySalary}</span>
+    `)
+
+    $(`#monthly`).remove()
     //conditional here to target totalMonthlySalary... check your HTML and CSS!
     if (totalMonthlySalary > 20000) {
-        $('#total').addClass('.redZone')
+        $('#monthly').addClass('.redZone')
     }
 }
