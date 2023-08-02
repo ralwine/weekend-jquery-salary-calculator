@@ -2,13 +2,13 @@ $(document).ready(onReady);
 //Need a global variable! Might be why things aren't working on ln56
 let totalMonthlySalary = 0
 
-function onReady(){
+function onReady() {
     console.log('in onReady');
 
-   //Delete listener
-   $('#salaryTable').on('click', '#delete-button', deleteEmployee);
-   
-   $('.submit-button').on('click', addEmployee);
+    //Delete listener
+    $('#salaryTable').on('click', '#delete-button', deleteEmployee);
+
+    $('.submit-button').on('click', addEmployee);
 
 }
 
@@ -28,7 +28,7 @@ function addEmployee(event) {
     render(employee)
 }
 
-function deleteEmployee(){
+function deleteEmployee() {
     console.log("In deleteEmployee")
     // add functionality
     $(this).parent().parent().remove(); // just removing button itself .parent()
@@ -52,8 +52,14 @@ function render(employee) {
     `)
     // employee.annualSalary to monthly -> employee.annualSalary/12
     /// math logic here?
-    let employeeMonthlySalary = employee.annualSalary/12;
-    totalMonthlySalary = totalMonthlySalary + employeeMonthlySalary; // does not like this
-
-    
+    let employeeMonthlySalary = employee.annualSalary / 12;
+    totalMonthlySalary = totalMonthlySalary + employeeMonthlySalary; // does not like this... fixed with global var!
+    // can we get this rendering to DOM? should be triggering conditional!
+    $('#total').append(`
+        <p>${totalMonthlySalary}</p>
+    `)  
+    //conditional here to target totalMonthlySalary... check your HTML and CSS!
+    if (totalMonthlySalary > 20000) {
+        $('#total').addClass('.redZone')
+    }
 }

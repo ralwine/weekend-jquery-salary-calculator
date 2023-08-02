@@ -19,3 +19,7 @@ thead {
 footer {
     text-align: right;
 }
+
+.redZone {
+    background-color: darkred;
+}
