@@ -18,7 +18,7 @@ START AGAIN!
 - There needs to be a delete function, it needs a listener. Will be in the last column of the table being created. {x}
 
 - Work on the math logic... needs to calculate total monthly salary for all employees (annualSalary/12). If monthly salary totals > $20,000
-    CSS should target total monthly cost {}
+    CSS should target total monthly cost {x}
     Conditional for total monthly > 20,000 {x}
 
 -Update this TODO again most likely {x}
