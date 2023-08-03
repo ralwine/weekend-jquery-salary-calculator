@@ -28,8 +28,6 @@ thead {
 
 footer {
     text-align: right;
+    font-size: large;
 }
 
-.redZone {
-    background-color: darkred;
-}

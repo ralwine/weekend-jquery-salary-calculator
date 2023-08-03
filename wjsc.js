@@ -55,13 +55,16 @@ function render(employee) {
     let employeeMonthlySalary = employee.annualSalary / 12;
     totalMonthlySalary = totalMonthlySalary + employeeMonthlySalary; // does not like this with let... fixed with global var!
     // can we get this rendering to DOM? should be triggering conditional!
+    if (Number(totalMonthlySalary) > 20000) {
+        console.log(totalMonthlySalary)
+        $('#total').css('background-color', 'red');
+    }
+
     $('#total').append(`
         <span id=monthly>${totalMonthlySalary}</span>
     `)
-
+    console.log(totalMonthlySalary)
     $(`#monthly`).remove()
     //conditional here to target totalMonthlySalary... check your HTML and CSS!
-    if (totalMonthlySalary > 20000) {
-        $('#end').addClass('.redZone');
-    }
+    
 }
